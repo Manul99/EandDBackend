@@ -1,0 +1,6 @@
+@EandDBackend_HostAddress = http://localhost:5193
+
+GET {{EandDBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
