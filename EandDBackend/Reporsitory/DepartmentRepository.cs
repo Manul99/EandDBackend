@@ -52,7 +52,7 @@ namespace EandDBackend.Reporsitory
 
             using (SqlConnection conn = new SqlConnection(_connectionString))
             {
-                string query = @"SELECT * FROM Departments WHERE bitActive = 1";
+                string query = @"SELECT * FROM Departments WHERE bitActive = 1 ORDER BY numDepatmentId DESC";
                 using (SqlCommand command = new SqlCommand(query, conn))
                 {
                     await conn.OpenAsync();
